@@ -179,7 +179,7 @@ static TypedField<rpg::Item, bool> static_cursed(
 	LDB_Reader::ChunkItem::cursed,
 	"cursed",
 	0,
-	1
+	0
 );
 static TypedField<rpg::Item, bool> static_entire_party(
 	&rpg::Item::entire_party,
@@ -379,7 +379,7 @@ static TypedField<rpg::Item, bool> static_use_skill(
 	LDB_Reader::ChunkItem::use_skill,
 	"use_skill",
 	0,
-	1
+	0
 );
 static SizeField<rpg::Item, DBBitArray> static_size_class_set(
 	&rpg::Item::class_set,

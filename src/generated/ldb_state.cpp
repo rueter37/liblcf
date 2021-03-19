@@ -116,7 +116,7 @@ static TypedField<rpg::State, int32_t> static_affect_type(
 	LDB_Reader::ChunkState::affect_type,
 	"affect_type",
 	0,
-	1
+	0
 );
 static TypedField<rpg::State, bool> static_affect_attack(
 	&rpg::State::affect_attack,
@@ -158,21 +158,21 @@ static TypedField<rpg::State, bool> static_avoid_attacks(
 	LDB_Reader::ChunkState::avoid_attacks,
 	"avoid_attacks",
 	0,
-	1
+	0
 );
 static TypedField<rpg::State, bool> static_reflect_magic(
 	&rpg::State::reflect_magic,
 	LDB_Reader::ChunkState::reflect_magic,
 	"reflect_magic",
 	0,
-	1
+	0
 );
 static TypedField<rpg::State, bool> static_cursed(
 	&rpg::State::cursed,
 	LDB_Reader::ChunkState::cursed,
 	"cursed",
 	0,
-	1
+	0
 );
 static TypedField<rpg::State, int32_t> static_battler_animation_id(
 	&rpg::State::battler_animation_id,

@@ -67,14 +67,14 @@ static TypedField<rpg::Skill, int32_t> static_sp_type(
 	LDB_Reader::ChunkSkill::sp_type,
 	"sp_type",
 	0,
-	1
+	0
 );
 static TypedField<rpg::Skill, int32_t> static_sp_percent(
 	&rpg::Skill::sp_percent,
 	LDB_Reader::ChunkSkill::sp_percent,
 	"sp_percent",
 	0,
-	1
+	0
 );
 static TypedField<rpg::Skill, int32_t> static_sp_cost(
 	&rpg::Skill::sp_cost,
@@ -130,7 +130,7 @@ static TypedField<rpg::Skill, bool> static_reverse_state_effect(
 	LDB_Reader::ChunkSkill::reverse_state_effect,
 	"reverse_state_effect",
 	0,
-	1
+	0
 );
 static TypedField<rpg::Skill, int32_t> static_physical_rate(
 	&rpg::Skill::physical_rate,
@@ -282,7 +282,7 @@ static TypedField<rpg::Skill, bool> static_easyrpg_ignore_reflect(
 	LDB_Reader::ChunkSkill::easyrpg_ignore_reflect,
 	"easyrpg_ignore_reflect",
 	0,
-	1
+	0
 );
 static TypedField<rpg::Skill, int32_t> static_easyrpg_state_hit(
 	&rpg::Skill::easyrpg_state_hit,

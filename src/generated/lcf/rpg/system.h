@@ -247,6 +247,9 @@ namespace rpg {
 		int32_t easyrpg_max_enemy_sp = -1;
 		int32_t easyrpg_max_stat_base_value = -1;
 		int32_t easyrpg_max_stat_battle_value = -1;
+		bool easyrpg_rpg2003_menu = false;
+		bool easyrpg_enable_certain_rpg2003_features = false;
+		bool easyrpg_fix_double_negative_effect_bug = false;
 	};
 	inline std::ostream& operator<<(std::ostream& os, System::FadeOut code) {
 		os << static_cast<std::underlying_type_t<decltype(code)>>(code);
@@ -348,7 +351,10 @@ namespace rpg {
 		&& l.easyrpg_max_actor_sp == r.easyrpg_max_actor_sp
 		&& l.easyrpg_max_enemy_sp == r.easyrpg_max_enemy_sp
 		&& l.easyrpg_max_stat_base_value == r.easyrpg_max_stat_base_value
-		&& l.easyrpg_max_stat_battle_value == r.easyrpg_max_stat_battle_value;
+		&& l.easyrpg_max_stat_battle_value == r.easyrpg_max_stat_battle_value
+		&& l.easyrpg_rpg2003_menu == r.easyrpg_rpg2003_menu
+		&& l.easyrpg_enable_certain_rpg2003_features == r.easyrpg_enable_certain_rpg2003_features
+		&& l.easyrpg_fix_double_negative_effect_bug == r.easyrpg_fix_double_negative_effect_bug;
 	}
 
 	inline bool operator!=(const System& l, const System& r) {

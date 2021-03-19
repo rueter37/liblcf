@@ -114,14 +114,14 @@ static CountField<rpg::System, std::vector<int16_t>> static_size_menu_commands(
 	&rpg::System::menu_commands,
 	LDB_Reader::ChunkSystem::menu_commands_size,
 	0,
-	1
+	0
 );
 static TypedField<rpg::System, std::vector<int16_t>> static_menu_commands(
 	&rpg::System::menu_commands,
 	LDB_Reader::ChunkSystem::menu_commands,
 	"menu_commands",
 	1,
-	1
+	0
 );
 static TypedField<rpg::System, rpg::Music> static_title_music(
 	&rpg::System::title_music,
@@ -529,6 +529,27 @@ static TypedField<rpg::System, int32_t> static_easyrpg_max_stat_battle_value(
 	0,
 	0
 );
+static TypedField<rpg::System, bool> static_easyrpg_rpg2003_menu(
+	&rpg::System::easyrpg_rpg2003_menu,
+	LDB_Reader::ChunkSystem::easyrpg_rpg2003_menu,
+	"easyrpg_rpg2003_menu",
+	0,
+	0
+);
+static TypedField<rpg::System, bool> static_easyrpg_enable_certain_rpg2003_features(
+	&rpg::System::easyrpg_enable_certain_rpg2003_features,
+	LDB_Reader::ChunkSystem::easyrpg_enable_certain_rpg2003_features,
+	"easyrpg_enable_certain_rpg2003_features",
+	0,
+	0
+);
+static TypedField<rpg::System, bool> static_easyrpg_fix_double_negative_effect_bug(
+	&rpg::System::easyrpg_fix_double_negative_effect_bug,
+	LDB_Reader::ChunkSystem::easyrpg_fix_double_negative_effect_bug,
+	"easyrpg_fix_double_negative_effect_bug",
+	0,
+	0
+);
 
 
 template <>
@@ -606,6 +627,9 @@ Field<rpg::System> const* Struct<rpg::System>::fields[] = {
 	&static_easyrpg_max_enemy_sp,
 	&static_easyrpg_max_stat_base_value,
 	&static_easyrpg_max_stat_battle_value,
+	&static_easyrpg_rpg2003_menu,
+	&static_easyrpg_enable_certain_rpg2003_features,
+	&static_easyrpg_fix_double_negative_effect_bug,
 	NULL
 };
 

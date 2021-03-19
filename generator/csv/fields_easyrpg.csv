@@ -15,7 +15,7 @@ BattleCommands,easyrpg_default_atb_mode,f,Enum<SaveSystem_AtbMode>,0xC8,0,0,1,De
 BattleCommands,easyrpg_enable_battle_row_command,f,Boolean,0xC9,True,0,1,If the row command should be enabled in RPG Maker 2003 battles
 BattleCommands,easyrpg_sequential_order,f,Boolean,0xCA,False,0,1,If alternative and gauge style battles should behave like traditional style battles
 Skill,easyrpg_battle2k3_message,f,DBString,0xC9,DBString(kDefaultMessage),0,1,RPG Maker 2003 battle skill start notification
-Skill,easyrpg_ignore_reflect,f,Boolean,0xCA,False,0,1,If the skill bypasses reflect states. Useful for physical skills and skills which are meant to remove positive states from enemies
+Skill,easyrpg_ignore_reflect,f,Boolean,0xCA,False,0,0,If the skill bypasses reflect states. Useful for physical skills and skills which are meant to remove positive states from enemies
 Skill,easyrpg_state_hit,f,Int32,0xCB,-1,0,0,Separate accuracy value for state inflictions
 Skill,easyrpg_attribute_hit,f,Int32,0xCC,-1,0,0,Separate accuracy value for attribute shifts
 Skill,easyrpg_ignore_restrict_skill,f,Boolean,0xCD,False,0,0,If the skill should bypass skill restrictions by states
@@ -25,14 +25,14 @@ Item,easyrpg_max_count,f,Int32,0xCA,-1,0,0,How many the player can carry of this
 Terms,easyrpg_item_number_separator,f,DBString,0xC8,DBString(kDefaultTerm),0,0,Item number separator
 Terms,easyrpg_skill_cost_separator,f,DBString,0xC9,DBString(kDefaultTerm),0,0,Skill cost separator
 Terms,easyrpg_equipment_arrow,f,DBString,0xCA,DBString(kDefaultTerm),0,0,Equipment window arrow
-Terms,easyrpg_status_scene_name,f,DBString,0xCB,DBString(kDefaultTerm),0,1,Status scene Name
-Terms,easyrpg_status_scene_class,f,DBString,0xCC,DBString(kDefaultTerm),0,1,Status scene Class
-Terms,easyrpg_status_scene_title,f,DBString,0xCD,DBString(kDefaultTerm),0,1,Status scene Title
-Terms,easyrpg_status_scene_condition,f,DBString,0xCE,DBString(kDefaultTerm),0,1,Status scene Condition
-Terms,easyrpg_status_scene_front,f,DBString,0xCF,DBString(kDefaultTerm),0,1,Status scene Front
-Terms,easyrpg_status_scene_back,f,DBString,0xD0,DBString(kDefaultTerm),0,1,Status scene Back
-Terms,easyrpg_order_scene_confirm,f,DBString,0xD1,DBString(kDefaultTerm),0,1,Order scene Confirm
-Terms,easyrpg_order_scene_redo,f,DBString,0xD2,DBString(kDefaultTerm),0,1,Order scene Redo
+Terms,easyrpg_status_scene_name,f,DBString,0xCB,DBString(kDefaultTerm),0,0,Status scene Name
+Terms,easyrpg_status_scene_class,f,DBString,0xCC,DBString(kDefaultTerm),0,0,Status scene Class
+Terms,easyrpg_status_scene_title,f,DBString,0xCD,DBString(kDefaultTerm),0,0,Status scene Title
+Terms,easyrpg_status_scene_condition,f,DBString,0xCE,DBString(kDefaultTerm),0,0,Status scene Condition
+Terms,easyrpg_status_scene_front,f,DBString,0xCF,DBString(kDefaultTerm),0,0,Status scene Front
+Terms,easyrpg_status_scene_back,f,DBString,0xD0,DBString(kDefaultTerm),0,0,Status scene Back
+Terms,easyrpg_order_scene_confirm,f,DBString,0xD1,DBString(kDefaultTerm),0,0,Order scene Confirm
+Terms,easyrpg_order_scene_redo,f,DBString,0xD2,DBString(kDefaultTerm),0,0,Order scene Redo
 Terms,easyrpg_battle2k3_double_attack,f,DBString,0xD3,DBString(kDefaultTerm),0,1,RPG Maker 2003 battle monster Double attack notification
 Terms,easyrpg_battle2k3_defend,f,DBString,0xD4,DBString(kDefaultTerm),0,1,RPG Maker 2003 battle monster Defend notification
 Terms,easyrpg_battle2k3_observe,f,DBString,0xD5,DBString(kDefaultTerm),0,1,RPG Maker 2003 battle monster Observe notification
@@ -58,3 +58,6 @@ System,easyrpg_max_actor_sp,f,Int32,0xD4,-1,0,0,Absolute maximum SP value actors
 System,easyrpg_max_enemy_sp,f,Int32,0xD5,-1,0,0,Absolute maximum SP value enemies can have
 System,easyrpg_max_stat_base_value,f,Int32,0xD6,-1,0,0,Absolute maximum value a base stat can have
 System,easyrpg_max_stat_battle_value,f,Int32,0xD7,-1,0,0,Absolute maximum value a battle stat can have
+System,easyrpg_rpg2003_menu,f,Boolean,0xD8,False,0,0,If the RPG Maker 2000 ingame menu should be customizable like in RPG Maker 2003
+System,easyrpg_enable_certain_rpg2003_features,f,Boolean,0xD9,False,0,0,If certain RPG Maker 2003 features should be enabled in RPG Maker 2000 games
+System,easyrpg_fix_double_negative_effect_bug,f,Boolean,0xDA,False,0,0,If negative damage should not be doubled

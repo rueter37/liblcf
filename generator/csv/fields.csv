@@ -146,8 +146,8 @@ Skill,using_message1,f,DBString,0x03,,0,0,String - RPG2000
 Skill,using_message2,f,DBString,0x04,,0,0,String - RPG2000
 Skill,failure_message,f,Int32,0x07,0,0,0,Integer - RPG2000
 Skill,type,f,Enum<Skill_Type>,0x08,0,1,0,Integer
-Skill,sp_type,f,Enum<Skill_SpType>,0x09,0,0,1,Integer - RPG2003
-Skill,sp_percent,f,Int32,0x0A,0,0,1,Integer - RPG2003
+Skill,sp_type,f,Enum<Skill_SpType>,0x09,0,0,0,Integer - RPG2003
+Skill,sp_percent,f,Int32,0x0A,0,0,0,Integer - RPG2003
 Skill,sp_cost,f,Int32,0x0B,0,0,0,Integer
 Skill,scope,f,Enum<Skill_Scope>,0x0C,0,1,0,Integer
 Skill,switch_id,f,Ref<Switch>,0x0D,1,0,0,Integer
@@ -155,7 +155,7 @@ Skill,animation_id,f,Ref<Animation>,0x0E,1,0,0,Integer
 Skill,sound_effect,f,Sound,0x10,,1,0,rpg::Sound
 Skill,occasion_field,f,Boolean,0x12,True,0,0,Flag
 Skill,occasion_battle,f,Boolean,0x13,False,0,0,Flag
-Skill,reverse_state_effect,f,Boolean,0x14,False,0,1,Flag - RPG2003
+Skill,reverse_state_effect,f,Boolean,0x14,False,0,0,Flag - RPG2003
 Skill,physical_rate,f,Int32,0x15,0,0,0,Integer
 Skill,magical_rate,f,Int32,0x16,3,0,0,Integer
 Skill,variance,f,Int32,0x17,4,0,0,Integer
@@ -198,7 +198,7 @@ Item,prevent_critical,f,Boolean,0x19,False,0,0,Flag
 Item,raise_evasion,f,Boolean,0x1A,False,0,0,Flag
 Item,half_sp_cost,f,Boolean,0x1B,False,0,0,Flag
 Item,no_terrain_damage,f,Boolean,0x1C,False,0,0,Flag
-Item,cursed,f,Boolean,0x1D,False,0,1,Flag - RPG2003
+Item,cursed,f,Boolean,0x1D,False,0,0,Flag - RPG2003
 Item,entire_party,f,Boolean,0x1F,False,1,0,Flag
 Item,recover_hp_rate,f,Int32,0x20,0,0,0,Integer
 Item,recover_hp,f,Int32,0x21,0,0,0,Integer
@@ -227,7 +227,7 @@ Item,state_chance,f,Int32,0x43,0,0,0,Integer
 Item,reverse_state_effect,f,Boolean,0x44,False,0,0,Flag
 Item,weapon_animation,f,Ref<Actor>,0x45,-1,0,1,Integer - RPG2003
 Item,animation_data,f,Array<BattlerAnimationItemSkill:Ref<Actor>>,0x46,,1,1,Array - RPG2003
-Item,use_skill,f,Boolean,0x47,False,0,1,Flag - RPG2003
+Item,use_skill,f,Boolean,0x47,False,0,0,Flag - RPG2003
 Item,class_set,t,DBBitArray,0x48,,0,1,Integer - RPG2003
 Item,class_set,f,DBBitArray,0x49,,1,1,Array - Flag - RPG2003
 Item,ranged_trajectory,f,Enum<Item_Trajectory>,0x4B,0,0,0,Integer
@@ -350,15 +350,15 @@ State,e_rate,f,Int32,0x0F,0,0,0,Integer
 State,hold_turn,f,Int32,0x15,0,0,0,Integer
 State,auto_release_prob,f,Int32,0x16,0,0,0,Integer
 State,release_by_damage,f,Int32,0x17,0,0,0,Integer
-State,affect_type,f,Enum<State_AffectType>,0x1E,0,0,1,Integer - RPG2003
+State,affect_type,f,Enum<State_AffectType>,0x1E,0,0,0,Integer - RPG2003
 State,affect_attack,f,Boolean,0x1F,False,0,0,Flag
 State,affect_defense,f,Boolean,0x20,False,0,0,Flag
 State,affect_spirit,f,Boolean,0x21,False,0,0,Flag
 State,affect_agility,f,Boolean,0x22,False,0,0,Flag
 State,reduce_hit_ratio,f,Int32,0x23,100,0,0,Integer
-State,avoid_attacks,f,Boolean,0x24,False,0,1,Flag - RPG2003
-State,reflect_magic,f,Boolean,0x25,False,0,1,Flag - RPG2003
-State,cursed,f,Boolean,0x26,False,0,1,Flag - RPG2003
+State,avoid_attacks,f,Boolean,0x24,False,0,0,Flag - RPG2003
+State,reflect_magic,f,Boolean,0x25,False,0,0,Flag - RPG2003
+State,cursed,f,Boolean,0x26,False,0,0,Flag - RPG2003
 State,battler_animation_id,f,Ref<Animation>,0x27,100,0,1,Integer - RPG2003
 State,restrict_skill,f,Boolean,0x29,False,0,0,Flag
 State,restrict_skill_level,f,Int32,0x2A,0,0,0,Integer
@@ -477,9 +477,9 @@ Terms,menu_quit,f,DBString,0x70,,1,0,String
 Terms,new_game,f,DBString,0x72,,1,0,String
 Terms,load_game,f,DBString,0x73,,1,0,String
 Terms,exit_game,f,DBString,0x75,,1,0,String
-Terms,status,f,DBString,0x76,,1,1,String
+Terms,status,f,DBString,0x76,,1,0,String
 Terms,row,f,DBString,0x77,,1,1,String
-Terms,order,f,DBString,0x78,,1,1,String
+Terms,order,f,DBString,0x78,,1,0,String
 Terms,wait_on,f,DBString,0x79,,1,1,String
 Terms,wait_off,f,DBString,0x7A,,1,1,String
 Terms,level,f,DBString,0x7B,,1,0,String
@@ -531,8 +531,8 @@ System,system_name,f,DBString,0x13,,0,0,String
 System,system2_name,f,DBString,0x14,,0,1,String - RPG2003
 System,party,t,Count<Vector<Int16>>,0x15,,0,0,Integer
 System,party,f,Vector<Int16>,0x16,"[1]",1,0,Array - Short
-System,menu_commands,t,Count<Vector<Int16>>,0x1A,,0,1,Integer - RPG2003
-System,menu_commands,f,Vector<Int16>,0x1B,"[1]",1,1,Array - Short - RPG2003
+System,menu_commands,t,Count<Vector<Int16>>,0x1A,,0,0,Integer - RPG2003
+System,menu_commands,f,Vector<Int16>,0x1B,"[1]",1,0,Array - Short - RPG2003
 System,title_music,f,Music,0x1F,,1,0,rpg::Music
 System,battle_music,f,Music,0x20,,1,0,rpg::Music
 System,battle_end_music,f,Music,0x21,,1,0,rpg::Music

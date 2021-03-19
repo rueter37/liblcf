@@ -1387,7 +1387,13 @@ namespace LDB_Reader {
 			/** Absolute maximum value a base stat can have */
 			easyrpg_max_stat_base_value = 0xD6,
 			/** Absolute maximum value a battle stat can have */
-			easyrpg_max_stat_battle_value = 0xD7
+			easyrpg_max_stat_battle_value = 0xD7,
+			/** If the RPG Maker 2000 ingame menu should be customizable like in RPG Maker 2003 */
+			easyrpg_rpg2003_menu = 0xD8,
+			/** If certain RPG Maker 2003 features should be enabled in RPG Maker 2000 games */
+			easyrpg_enable_certain_rpg2003_features = 0xD9,
+			/** If negative damage should not be doubled */
+			easyrpg_fix_double_negative_effect_bug = 0xDA
 		};
 	};
 	struct ChunkSwitch {

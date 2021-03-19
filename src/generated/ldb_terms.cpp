@@ -711,7 +711,7 @@ static TypedField<rpg::Terms, DBString> static_status(
 	LDB_Reader::ChunkTerms::status,
 	"status",
 	1,
-	1
+	0
 );
 static TypedField<rpg::Terms, DBString> static_row(
 	&rpg::Terms::row,
@@ -725,7 +725,7 @@ static TypedField<rpg::Terms, DBString> static_order(
 	LDB_Reader::ChunkTerms::order,
 	"order",
 	1,
-	1
+	0
 );
 static TypedField<rpg::Terms, DBString> static_wait_on(
 	&rpg::Terms::wait_on,
@@ -935,56 +935,56 @@ static TypedField<rpg::Terms, DBString> static_easyrpg_status_scene_name(
 	LDB_Reader::ChunkTerms::easyrpg_status_scene_name,
 	"easyrpg_status_scene_name",
 	0,
-	1
+	0
 );
 static TypedField<rpg::Terms, DBString> static_easyrpg_status_scene_class(
 	&rpg::Terms::easyrpg_status_scene_class,
 	LDB_Reader::ChunkTerms::easyrpg_status_scene_class,
 	"easyrpg_status_scene_class",
 	0,
-	1
+	0
 );
 static TypedField<rpg::Terms, DBString> static_easyrpg_status_scene_title(
 	&rpg::Terms::easyrpg_status_scene_title,
 	LDB_Reader::ChunkTerms::easyrpg_status_scene_title,
 	"easyrpg_status_scene_title",
 	0,
-	1
+	0
 );
 static TypedField<rpg::Terms, DBString> static_easyrpg_status_scene_condition(
 	&rpg::Terms::easyrpg_status_scene_condition,
 	LDB_Reader::ChunkTerms::easyrpg_status_scene_condition,
 	"easyrpg_status_scene_condition",
 	0,
-	1
+	0
 );
 static TypedField<rpg::Terms, DBString> static_easyrpg_status_scene_front(
 	&rpg::Terms::easyrpg_status_scene_front,
 	LDB_Reader::ChunkTerms::easyrpg_status_scene_front,
 	"easyrpg_status_scene_front",
 	0,
-	1
+	0
 );
 static TypedField<rpg::Terms, DBString> static_easyrpg_status_scene_back(
 	&rpg::Terms::easyrpg_status_scene_back,
 	LDB_Reader::ChunkTerms::easyrpg_status_scene_back,
 	"easyrpg_status_scene_back",
 	0,
-	1
+	0
 );
 static TypedField<rpg::Terms, DBString> static_easyrpg_order_scene_confirm(
 	&rpg::Terms::easyrpg_order_scene_confirm,
 	LDB_Reader::ChunkTerms::easyrpg_order_scene_confirm,
 	"easyrpg_order_scene_confirm",
 	0,
-	1
+	0
 );
 static TypedField<rpg::Terms, DBString> static_easyrpg_order_scene_redo(
 	&rpg::Terms::easyrpg_order_scene_redo,
 	LDB_Reader::ChunkTerms::easyrpg_order_scene_redo,
 	"easyrpg_order_scene_redo",
 	0,
-	1
+	0
 );
 static TypedField<rpg::Terms, DBString> static_easyrpg_battle2k3_double_attack(
 	&rpg::Terms::easyrpg_battle2k3_double_attack,

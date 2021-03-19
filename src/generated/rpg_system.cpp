@@ -100,6 +100,9 @@ std::ostream& operator<<(std::ostream& os, const System& obj) {
 	os << ", easyrpg_max_enemy_sp="<< obj.easyrpg_max_enemy_sp;
 	os << ", easyrpg_max_stat_base_value="<< obj.easyrpg_max_stat_base_value;
 	os << ", easyrpg_max_stat_battle_value="<< obj.easyrpg_max_stat_battle_value;
+	os << ", easyrpg_rpg2003_menu="<< obj.easyrpg_rpg2003_menu;
+	os << ", easyrpg_enable_certain_rpg2003_features="<< obj.easyrpg_enable_certain_rpg2003_features;
+	os << ", easyrpg_fix_double_negative_effect_bug="<< obj.easyrpg_fix_double_negative_effect_bug;
 	os << "}";
 	return os;
 }
